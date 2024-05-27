@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "enum": ["/user", "/user/{userId}"]
+    },
+    "query": {
+      "type": "object",
+      "properties": {
+        "userId": { "type": "integer" }
+      },
+      "required": ["userId"]
+    }
+  },
+  "required": ["path", "query"]
+}

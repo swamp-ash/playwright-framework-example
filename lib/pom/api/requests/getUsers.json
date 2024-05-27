@@ -1,0 +1,5 @@
+{
+  "operationName": "getUser",
+  "variables": {},
+  "query": "query getUser($id: Int) {\n  user(name: $name) {\n    id\n    email\n    }\n      __typename\n    }\n    __typename\n  }\n}"
+}
